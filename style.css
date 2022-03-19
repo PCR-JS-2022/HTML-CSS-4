@@ -2,6 +2,7 @@ body {
   background-color: #fffcfc;
   min-height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 
 body > header,
@@ -89,6 +90,71 @@ button i,
 span i {
   font-style: normal;
   margin-right: 10px;
+}
+
+dialog {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(196, 196, 196, 0.7);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 35px 48px;
+  width: 1000px;
+  max-height: calc(100vh - 72px);
+  min-height: 300px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-likes {
+  padding: 56px 30px 61px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.modal-like {
+  width: 20%;
+  float: left;
+  padding: 39px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.modal-like-avatar {
+  border-radius: 50%;
 }
 
 section > ul {
