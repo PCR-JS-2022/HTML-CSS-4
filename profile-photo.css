@@ -1,0 +1,14 @@
+main > div:first-of-type > img {
+    width: 320px;
+    height: 240px;
+}
+
+main > div:first-of-type > div {
+    margin-top: 15px;
+    max-width: 320px;
+}
+
+main > div:first-of-type > div > pre{
+    display: inline-block;
+    padding: 5px;
+}
