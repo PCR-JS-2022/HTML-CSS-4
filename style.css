@@ -141,7 +141,7 @@ main > div > section:nth-child(2) > div:nth-child(2) > ul li > ul > li:nth-child
     position: relative;
     background-color: #fff;
     min-height: 300px;
-    max-height: calc(100vh - 132px); 
+    max-height: calc(100vh - 300px);
     width: 1000px;
     padding: 60px 30px;
     display: flex;
