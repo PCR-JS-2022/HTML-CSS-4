@@ -134,16 +134,15 @@ main > div > section:nth-child(2) > div:nth-child(2) > ul li > ul > li:nth-child
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 10px;
 }
 
 .popup_content {
     position: relative;
     background-color: #fff;
     min-height: 300px;
-    max-height: calc(100vh - 300px);
+    max-height: calc(100vh - 72px);
     width: 1000px;
-    padding: 60px 30px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     overflow-y: auto;
