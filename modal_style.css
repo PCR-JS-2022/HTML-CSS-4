@@ -16,22 +16,12 @@
 .modal {
     width: 1000px;
     min-height: 300px;
-    max-height: calc(100% - 36px);
     background-color: #fff;
     border-radius: 10px;
     padding: 60px 30px;
     box-sizing: border-box;
     position: relative;
-    overflow-y: auto;
-}
-
-.modal::-webkit-scrollbar {
-    width: 10px;
-}
-
-.modal::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .8);
-    border-radius: 10px;
+    height: 100%;
 }
 
 .close-modal {
@@ -53,6 +43,17 @@
     column-gap: 25px;
     row-gap: 30px;
     justify-content: center;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.users::-webkit-scrollbar {
+    width: 10px;
+}
+
+.users::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 10px;
 }
 
 .user {
@@ -60,7 +61,6 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    min-height: 0;
 }
 
 .user__avatar {
