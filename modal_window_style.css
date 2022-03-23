@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-.modal_window{
+.modal_window {
     height:100%;
     width: 100%;
     min-width: 1000px;
@@ -20,20 +20,22 @@
     flex-direction: column;
 }
 
-.close-btn{
+.close-btn {
     margin:  36px 36px 36px auto;
     width: 36px;
     height: 36px;
 }
-.close-btn > img{
+
+.close-btn > img {
     width: 20px;
     height: 20px;
 }
 
-.header{
+.header {
     display: flex;
 }
-.people-list{
+
+.people-list {
 margin: 36px;
 gap: 20px;
 height: 80%;
@@ -45,18 +47,19 @@ justify-content: center;
 overflow-y: auto;
 }
 
-.people{
+.people {
     height: 200px;
     background-color: tomato;
     text-align: center;
 }
-.people >img,
-.people >video{
+
+.people >img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
     margin: 20px;
 }
-.people >p{
+
+.people >p {
     margin: 0 0 30px  0;
 }
