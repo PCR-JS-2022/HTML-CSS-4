@@ -104,3 +104,55 @@ main > div > article:last-child section > img {
   border-radius: 100%;
   margin-right: 10px;
 }
+.opacity-reducer {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.likes-sheet {
+  width: 1000px;
+  min-height: 300px;
+  max-height: calc(100vh - 32px*2);
+  background-size: auto;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.likes-sheet__cross {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+.likes-sheet__likes-sheet-content {
+  margin: 128px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  overflow: auto;
+  max-height: calc(100vh - 32px*2 - 128px*2);
+}
+.likes-sheet-content__person {
+  margin: 0 16px;
+  height: fit-content;
+  width: 121px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person__name {
+  width: fit-content;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
