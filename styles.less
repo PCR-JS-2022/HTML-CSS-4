@@ -1,0 +1,150 @@
+:root {
+  --header-footer-height: 37px;
+  --border-color: #c4c4c4;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 1.1rem;
+}
+
+header > div,
+footer > div {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+header,
+footer,
+footer > div,
+header > div {
+  height: var(--header-footer-height);
+}
+
+footer div {
+  bottom: 0;
+  border-top: 1px solid var(--border-color);
+}
+
+header div {
+  top: 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+// Основная часть
+main {
+  margin: 27px 37px 10px 45px;
+  display: flex;
+  justify-content: space-between;
+
+  //   Основная пикча
+  & > figure > img {
+    width: 320px;
+    height: 240px;
+  }
+
+  //   Всё, что справа от основной пикчи
+  & > div {
+    // Секция с лайками и комментами и кнопкой "добавить..."
+    & > section {
+      display: flex;
+      justify-content: space-between;
+
+      //   Иконки с цифрами
+      & > div {
+        display: flex;
+        column-gap: 30px;
+
+        // Иконка с цифрой
+        & > p {
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+
+          //   Лайк
+          &:first-child > span:first-child {
+            margin-right: 10px;
+
+            &:hover {
+              color: red;
+            }
+          }
+
+          //   Коммент
+          &:nth-child(2) > span:first-child {
+            margin-right: 10px;
+
+            &:hover {
+              color: green;
+            }
+          }
+        }
+      }
+
+      //   Текст в секции
+      & > p {
+        line-height: 2.1rem;
+      }
+    }
+
+    // Блок с комментами
+    & > article:last-child {
+      font-size: 1rem;
+
+      // Комменты к комментам
+      & > div {
+        margin-left: 150px;
+
+        // Чередую через одного
+        & > section:nth-child(2n - 1) {
+          background-color: #c4c4c433;
+        }
+      }
+
+      // Комментарий
+      & section {
+        width: 100%;
+        height: auto;
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        padding: 10px;
+
+        // Дата коммента
+        & > time {
+          margin-left: auto;
+          align-self: flex-end;
+        }
+
+        //Текст в комментах
+        & > div > p {
+          margin-top: 0;
+
+          //   Имя юзера
+          &:first-child {
+            font-weight: bold;
+          }
+
+          //   Подкомментарий
+          &:last-child {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 0;
+          }
+        }
+
+        // Аватарка юзера
+        & > img {
+          width: 48px;
+          height: 48px;
+          border-radius: 100%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
