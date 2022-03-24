@@ -1,0 +1,216 @@
+:root {
+  --border-grey: 1px solid #c4c4c4;
+  --grey-color: #c4c4c4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  min-height: 30px;
+  border-bottom: var(--border-grey);
+}
+
+main section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+main section > div:first-child {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section > div:first-child > div:first-child {
+  margin-bottom: 20px;
+}
+
+main section > div:first-child img {
+  width: 320px;
+  height: 240px;
+}
+
+main section > div:first-child div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 320px;
+}
+
+main section > div:first-child div p {
+  padding: 10px 20px;
+  background-color: var(--grey-color);
+  margin-bottom: 10px;
+}
+
+main section > div:nth-child(2) > div:first-child {
+  max-width: 80%;
+}
+
+main section > div:nth-child(2) > div:first-child p {
+  margin: 15px 0px;
+}
+
+main section > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 30px;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+main section > div:nth-child(2) > div:nth-child(2) > div:nth-child(n) {
+  padding-left: 30px;
+}
+
+main section > div:nth-child(2) > div:nth-child(2) > div:last-child {
+  padding: 0px;
+  margin-left: auto;
+}
+main section > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  background-image: url(/img/buttons/image\ 1.svg);
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+main section > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  background-image: url(/img/buttons/image\ 2.svg);
+  background-repeat: no-repeat;
+}
+
+main section > div:nth-child(2) > div:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+}
+
+main section > div:nth-child(2) > div:nth-child(3) > div > div {
+  display: flex;
+  align-items: center;
+  border-top: var(--border-grey);
+  border-bottom: var(--border-grey);
+  padding: 10px;
+}
+
+main section > div:nth-child(2) > div:nth-child(3) img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+main section > div:nth-child(2) > div:nth-child(3) p {
+  margin: 5px 0;
+}
+
+main
+  section
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > div
+  > div:nth-child(2) {
+  margin-left: 10px;
+  width: 60%;
+}
+
+main
+  section
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > div:not(:first-child) {
+  margin-left: 20%;
+}
+
+main
+  section
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > div:not(:first-child):nth-child(even) {
+  background: #c4c4c433;
+  border-top: none;
+  border-bottom: none;
+}
+
+footer {
+  min-height: 30px;
+  border-top: var(--border-grey);
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .content {
+  position: fixed;
+  min-height: 300px;
+  width: 1000px;
+  max-height: calc(100vh - 72px);
+  background: white;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.modal .content .close-button {
+  margin: 10px 10px 0px auto;
+  border: none;
+  background: none;
+}
+
+.modal .content .close-button img {
+  width: 25px;
+  height: 35px;
+}
+
+.modal .content .likes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.modal .content .likes .like {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100px;
+  gap: 0;
+  margin-bottom: 10px;
+} 
+
+.modal .content .likes .like .avatar-user {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.modal .content .likes .like .avatar-user img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
