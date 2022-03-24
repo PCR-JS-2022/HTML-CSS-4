@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Lesson 3</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__block container">
+          <h1 class="header__title">Заголовок</h1>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="content">
+          <section class="main-card">
+            <article class="main__wrapper">
+              <figure class="main__photo">
+                <img src="img/8.jpg" alt="умный кот" />
+              </figure>
+              <ul class="card__info">
+                <li class="card__tag">#котики</li>
+                <li class="card__tag">#собачки</li>
+                <li class="card__tag">#животные</li>
+                <li class="card__tag">#дикая природа</li>
+                <li class="card__tag">#наиболее интересные</li>
+                <li class="card__tag">#последние обновления за неделю</li>
+              </ul>
+            </article>
+          </section>
+          <section class="info">
+            <div class="card__content">
+              <ul class="card__list">
+                <li class="card__item">
+                  <p class="card__paragraph">Дата съемки:</p>
+                  <time datetime="2022-03-07 19:00">19:00</time>
+                </li>
+                <li class="card__item">
+                  <p class="card__paragraph">Локация:</p>
+                  <p>Египет, Арабская Республика</p>
+                </li>
+                <li class="card__item">
+                  <p>
+                    После недели кодинга на курсах PCR JS 2022, захотелось
+                    улететь в теплые края, что я и сделал. Но сразу стало как-то
+                    скучно
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="about">
+              <ul class="about__list">
+                <li class="about__item">
+                  <button class="btn effect" type="button">
+                    <img class="btn__png" src="heart.png" alt="" />
+                  </button>
+                  <p class="heart__count modal__btn">12</p>
+                </li>
+                <li class="about__item">
+                  <button class="btn effect" type="button">
+                    <img class="btn__png" src="comment.png" alt="" />
+                  </button>
+                  <p class="heart__count">12</p>
+                </li>
+              </ul>
+              <ul class="about__comments">
+                <li class="comments__item">
+                  <a class="text-effect" href="">Добавить комментарий</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="comments">
+              <ul class="comments__list">
+                <li class="comments__item">
+                  <div class="comments__wrapper">
+                    <figure class="comments__img">
+                      <img src="img/person-1.jpg" alt="" />
+                    </figure>
+                    <ul class="comments__info">
+                      <li>Ольга</li>
+                      <li><time datetime="2022-03-07 19:00">19:00</time></li>
+                      <li>
+                        <p>
+                          Хотелось бы уточнить дату Вашего вылета из аэропорта
+                          Хургады?
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <ul class="comments__undo undo">
+                    <li class="undo__list">
+                      <div class="undo__wrapper">
+                        <figure class="comments__img">
+                          <img src="img/person-2.jpg" alt="" />
+                        </figure>
+                        <ul class="comments__info">
+                          <li>Анна</li>
+                          <li>
+                            <time datetime="2022-03-07 21:00">21:00</time>
+                          </li>
+                          <li>
+                            <p>Около 7 часов утра мы вылетели в Москву</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="undo__list">
+                      <div class="undo__wrapper">
+                        <figure class="comments__img">
+                          <img src="img/person-2.jpg" alt="" />
+                        </figure>
+                        <ul class="comments__info">
+                          <li>Анна</li>
+                          <li>
+                            <time datetime="2022-03-07 21:00">21:00</time>
+                          </li>
+                          <li>
+                            <p>Около 7 часов утра мы вылетели в Москву</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="undo__list">
+                      <div class="undo__wrapper">
+                        <figure class="comments__img">
+                          <img src="img/person-2.jpg" alt="" />
+                        </figure>
+                        <ul class="comments__info">
+                          <li>Анна</li>
+                          <li>
+                            <time datetime="2022-03-07 21:00">21:00</time>
+                          </li>
+                          <li>
+                            <p>Около 7 часов утра мы вылетели в Москву</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="comments__item">
+                  <div class="comments__wrapper">
+                    <figure class="comments__img">
+                      <img src="img/person-1.jpg" alt="" />
+                    </figure>
+                    <ul class="comments__info">
+                      <li>Ольга</li>
+                      <li><time datetime="2022-03-07 19:00">19:00</time></li>
+                      <li>
+                        <p>
+                          Хотелось бы уточнить дату Вашего вылета из аэропорта
+                          Хургады?
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__block container">
+          <p class="footer__info">Сайт с идеальным натсроением</p>
+        </div>
+      </footer>
+      <div class="popup">
+        <section class="modal">
+          <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <div class="modal__body">
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Fabio</figcaption>
+                <span>USA</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Hunter</figcaption>
+                <span>USA</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Jorge</figcaption>
+                <span>Italy</span> 
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Rinat</figcaption>
+                <span>Russia</span> 
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Abubakar</figcaption>
+                <span>Russia</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Shavkat</figcaption>
+                <span>Kazakhstan</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Benoît </figcaption>
+                <span>France</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">André </figcaption>
+                <span>Portugal</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Islam</figcaption>
+                <span>Russia</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Petr Yan</figcaption>
+                <span>Russia</span>
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Guido</figcaption>
+                <span>Argentina</span> 
+              </figure>
+              <figure class="modal__block">
+                <img class="modal__img" src="img/person-1.jpg" alt="" />
+                <figcaption class="modal__info">Merab</figcaption>
+                <span>Georgia</span>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
