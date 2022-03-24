@@ -31,13 +31,13 @@
 .modal-window > div:nth-child(1){
     display: flex;
 }
-.modal-window > div:nth-child(1) > button {
+.button {
     width: 100px;
     height: 100px;
     margin: 15px 15px 15px auto;
     cursor: pointer;
 }
-.modal-window > div:nth-child(1) > button > img {
+.image {
     width: 70px;
     height: 70px;
 }
