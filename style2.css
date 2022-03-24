@@ -1,0 +1,60 @@
+.modalBG {
+    padding: 36px;
+    position: fixed;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modalWD {
+    min-height: 300px;
+    min-width: 1000px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex: content;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn-box {
+    height: 42px;
+    width: 100%;
+}
+
+.btn-box > button {
+    float: right;
+    align-content: center;
+    justify-content: center;
+}
+
+.close {
+    height: 25px;
+    width: 25px;
+}
+
+.user {
+    border-radius: 100%;
+    height: 45px;
+    width: 45px;
+    margin: 12.5%;
+}
+
+.userList {
+    display: flex;
+    flex: content;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 100%;
+}
+
+.name {
+    margin: 0;
+}
+
+.userBox {
+    width: 60px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 10px 10px;
+    text-align: center;
+}
