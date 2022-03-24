@@ -261,9 +261,9 @@ img {
 }
 
 .modal__close {
-  position: absolute;
-  top: 25px;
-  right: 43px;
+  position: sticky;
+  top: 0;
+  right: 10px;
   color: #333;
   float: right;
   font-weight: bold;

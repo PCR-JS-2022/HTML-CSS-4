@@ -3,23 +3,28 @@ const modalBtn = document.querySelector(".modal__btn");
 const closeBtn = document.querySelector(".modal__close");
 
 // Events
-modalBtn.addEventListener("click", openModal);
-closeBtn.addEventListener("click", closeModal);
-window.addEventListener("click", outsideClick);
 
-// Open
-function openModal() {
-  modal.style.display = "block";
-}
+document.addEventListener("DOMContentLoaded", function(event) {
 
-// Close
-function closeModal() {
-  modal.style.display = "none";
-}
+  // Open
+  function openModal() {
+    modal.style.display = "block";
+  }
 
-// клик в пустом месте
-function outsideClick(e) {
-  if (e.target == modal) {
+  // Close
+  function closeModal() {
     modal.style.display = "none";
   }
-}
+
+  // клик в пустом месте
+  function outsideClick(e) {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  modalBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+  window.addEventListener("click", outsideClick);
+});
+
