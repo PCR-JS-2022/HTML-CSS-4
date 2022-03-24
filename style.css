@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 60px;
+    border-bottom: 2px solid rgba(125, 125, 128);
+}
+
+main>div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+main>div:first-child>div:first-child {
+    margin: 35px 0 0 60px;
+}
+
+main>div:first-child>div:first-child>section:first-child {
+    width: 320px;
+    height: 240px;
+    background: url('https://www.androidpolice.com/wp-content/uploads/2020/10/31/DSC02545-01-01-01-668x445.jpeg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+main>div:first-child>div:first-child>section:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main>div:first-child>div:first-child>section:nth-child(2) div {
+    margin-top: 20px;
+    min-width: 50px;
+    background: rgb(202, 202, 202);
+    padding: 8px;
+    margin-right: 10px;
+}
+
+main>div:first-child>div:nth-child(2) {
+    margin: 35px 60px 0 60px;
+    display: grid;
+    grid-template-rows: 1.2fr .3fr 3fr;
+}
+
+main>div:first-child>div:nth-child(2)>section:first-child {
+    background: rgba(175, 139, 122, 0.5);
+    height: 120px;
+    padding: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:first-child div {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2) span {
+    font-size: 18px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child {
+    padding-bottom: 30px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:nth-child(2):hover {
+    cursor: pointer;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span {
+    padding-right: 55px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:first-child:before {
+    content: url(img/heart.png);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:nth-child(2):before {
+    content: url(img/comment.png);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:first-child:hover,
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:nth-child(2):hover {
+    cursor: pointer;
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:first-child {
+    min-height: 50px;
+    border-bottom: 3px solid rgba(240, 240, 240);
+    border-top: 3px solid rgba(240, 240, 240);
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:first-child,
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div {
+    display: flex;
+    padding: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:first-child>div:first-child,
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div>div:first-child {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('https://sun9-27.userapi.com/c844616/v844616495/15185f/wLwjlF-wHUU.jpg?ava=1');
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div {
+    margin-left: 100px;
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div:nth-child(odd) {
+    background-color: mistyrose;
+}
+
+footer {
+    margin-top: 50px;
+    height: 60px;
+    border-top: 2px solid rgba(125, 125, 128);
+}
+
+
+.modal-layer {
+    width: 1000px;
+    min-height: 300px;
+    max-height: 100vh;
+    overflow-y: auto;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.layer {
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+}
+
+.modal-layer__close {
+    position: absolute;
+    top: 0;
+    right:0;
+    cursor: pointer;
+}
+
+.modal-layer__container__person {
+    background-image: url('https://sun1-13.userapi.com/s/v1/ig2/bcfA_RUiRmznlCi9rI6RWvkilcYvAAtfGUYX6SasWhrCxwMABSb5lGNsyxYOSbDXnIUNILry28TuNh5FmY6x-rFo.jpg?size=50x50&quality=95&crop=442,0,1712,1712&ava=1');
+    background-size: cover;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.modal-layer__container > div{
+    margin: 65px 20px 15px 40px;
+
+}
+
+.modal-layer__container__description {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.modal-layer > section {
+    display: flex;
+    flex-wrap: wrap;
+}
