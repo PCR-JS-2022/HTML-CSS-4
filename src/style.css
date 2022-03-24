@@ -183,7 +183,7 @@ footer {
     width: 1000px;
     min-height: 300px;
     max-height: calc(100vh - 72px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .popup-close {
