@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #1f1f1f;
+    color: white;
+    font-family: Roboto;
+}
+
+body {
+    overflow: hidden;
+}
+
+.window-block {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1004;
+}
+
+.window {
+    width: 1000px;
+    min-height: 300px;
+    max-height: calc(100vh - 72px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+.close-window-button {
+    margin: 0px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+button{
+    background: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.photo-preview {
+    width: 320px;
+    height: 240px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.person-photo {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+}
+
+.like-person-block {
+    text-align: center;
+    padding: 30px;
+}
+
+.likes-people {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+button > img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+button > img:active{
+    background-color: aqua;
+}
+
+.comment-img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+li > div > img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+main {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section > span { 
+    padding: 3px;
+    border: 1px solid #ff5500;
+    border-radius: 10px;
+}
+
+main > section { 
+    padding: 30px;
+}
+
+main > section:last-child > section:first-child{ 
+    height: 240px;
+    position: relative;
+}
+
+p:first-child {
+    padding-bottom: 20px;
+}
+
+section > div:last-child {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+section > div:last-child > div:first-child {
+    padding-right: 15px;
+}
+
+section > div:last-child > button{
+    margin-left: 850px;
+}
+
+main > section:last-child > section:last-child{ 
+    padding-top: 15px;
+}
+
+main > section:first-child {
+    padding-left:60px;
+}
+
+main > section:last-child {
+    width: 1100px;
+}
+
+li > div { 
+    padding: 5px;
+    display: flex;
+}
+
+article {
+    padding-left: 10px;
+}
+
+article > p{
+    padding-top: 8px;
+}
+
+article > span:last-of-type {
+    color: #4e4e4e;
+    padding-left: 15px;
+}
+
+li > ul {
+    padding-left: 300px;
+}
+
+li > ul > li:nth-child(odd) {
+    border: 3px solid #ff5500;;
+    border-radius: 20px;
+}
+
+footer, section > ul {
+    border-top: 1px solid #676767;
+}
+
+li {
+    padding: 10px 0px 10px 10px;
+}
+
+header, footer {
+    height: 60px;
+    background-color: #181818;;
+}
+
+header {
+    border-bottom: 1px solid #676767;
+}
