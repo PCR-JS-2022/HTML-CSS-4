@@ -1,0 +1,289 @@
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: #202020;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+}
+
+header,
+footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: rgb(228, 228, 228);
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:hover,
+button:hover * {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  cursor: pointer;
+}
+
+header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.like-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 300px;
+  max-height: calc(100vh - 72px);
+  padding: 20px;
+  background-color: rgb(255, 255, 255);  
+  border-radius: 15px;
+  z-index: 3;
+}
+
+.modal-button {
+  content: "";
+  flex: 20%;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.modal-button button {
+  float: right;
+}
+
+.modal-content {
+  content: "";
+  clear: both;
+  flex: 80%;
+  background: rgba(255, 255, 255, 0.5);
+  overflow-y: auto;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245);
+    border-radius: 30px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    border-radius: 30px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background-color: red;
+}
+
+.like-modal-user-card {
+  display: inline-block;
+  margin: 16px;
+  margin-left: 10px;
+  width: 160px;
+  height: 160px;
+  padding-top: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.like-modal-user-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+h4 {
+    margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  font-size: 1.5rem;
+}
+
+main,
+main > div > section,
+main > article section:nth-child(2) div,
+main > article section:nth-child(2) button,
+main > article section:nth-child(2),
+li div div,
+li section {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main > div,
+li div,
+main > article {
+  display: flex;
+  flex-direction: column;
+}
+
+main > div {
+  flex: 25%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: dashed #202020 2px;
+}
+
+main > div > section {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main > div span {
+  display: inline-block;
+  min-width: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  color: rgb(20, 20, 20);
+  border: solid rgb(20, 20, 20) 1px;
+  border-radius: 15px;
+  font-size: 0.75em;
+  text-align: center;
+  vertical-align: auto;
+}
+
+main > div span:hover,
+main > div span:hover * {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  cursor: pointer;
+}
+
+figure {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  width: 320px;
+  height: 240px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+main > article {
+  flex: 75%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main > article div {
+  margin-bottom: 10px;
+}
+
+main > article section:nth-child(1) {
+  flex: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main > article section:nth-child(2) {
+  flex: 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: solid rgb(207, 207, 207) 2px;
+}
+
+main > article section:nth-child(2) button {
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 20px;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  font-size: 1em;
+}
+
+main > article section:nth-child(2) button object {
+  margin-right: 8px;
+}
+
+main > article section:nth-child(2) button:hover,
+main > article section:nth-child(2) button:hover * {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  cursor: pointer;
+}
+
+main > article section:nth-child(3) {
+  flex: 65%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+li ul {
+  margin-left: 80px;
+}
+
+li {
+  font-size: 0.8rem;
+}
+
+li h2 {
+  font-size: 1rem;
+}
+
+li time,
+li figure {
+  margin-right: 15px;
+}
+
+li section {
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: solid rgb(207, 207, 207) 2px;
+}
+
+li li:nth-child(odd) section {
+  background-color: rgb(241, 241, 241);
+}
+
+/*Убираем нижнюю границу у полседнего ответа на комментарий*/
+li li:last-child section {
+  border: none;
+}
+
+/*Оставляем верхнюю границу у всех комментариев(не ответов) кроме первого*/
+li:not(li li, li:first-child) {
+  border-top: solid rgb(207, 207, 207) 2px;
+}
+
+li section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
