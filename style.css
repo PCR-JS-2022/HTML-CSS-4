@@ -1,0 +1,232 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    background-color:#0088BB;
+    height: 6%;
+    border-bottom: 1px solid black;
+}
+
+main {
+    height: 88%;
+}
+
+footer {
+    background-color:#0088BB;
+    height: 6%;
+    border-top: 1px solid black;
+}
+
+aside {
+    background-color:white;
+    width: 30%;
+    height: 100%;
+    outline: 1px solid black;
+}
+
+h2 {
+    margin: 0;
+    padding: 7px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+article > div > div:first-child {
+    width: 320px;
+    height: 240px;
+    border: 1px solid black;
+}
+
+section {
+    width: 100%;
+    margin: 35px;
+    height: 88%;
+}
+
+section > div {
+    height: 240px;
+}
+
+section > div > div:nth-child(odd) {
+    height: 50%;
+}
+
+p {
+    margin-top: 0;
+}
+
+span {
+    margin: 2% 2% 0 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+article > div > div:nth-child(even) {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+article > div {
+    margin: 30px 0 0 35px;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    margin: 0 2% 0 auto;
+}
+
+section > div > div:nth-child(even) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 50%;
+}
+
+section > div > div:nth-child(even) > p:nth-child(even) {
+    margin: 0 15px 0 5px;
+    font-size: 22px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul ul {
+    padding: 0 0 0 20%;
+}
+
+ul ul > li:nth-child(odd) > div {
+    background-color: #C4C4C433;
+}
+
+
+li > div {
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    height: 60px;
+    width: 97.1%;
+    display: flex;
+
+}
+
+section > ul {
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+li > div > div:first-child {
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+}
+
+li > div > div:first-child + div > p:not(last-child) {
+    margin: 1px 0 0 0;
+    font-size: 11px;
+}
+
+li > div > div:first-child + div > p:last-child {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+}
+
+li > div > div:first-child > div {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.modal-background {
+    height: 100%;
+    width: 100%;
+    background: rgba(196, 196, 196, 0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+}
+
+.modal-window {
+    min-height: 300px;
+    max-height: 800px;
+    width: 1000px;
+    background-color: #FFFFFF;
+    margin: auto;
+    position: relative;
+    overflow: auto;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.modal-header {
+    height: 40px;
+}
+
+.like-list {
+    min-height: 260px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    height: 70px;
+    width: 70px;
+}
+
+.name {
+    align-items: center;
+    height: 15px;
+    margin: 4px 0 0 0;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
