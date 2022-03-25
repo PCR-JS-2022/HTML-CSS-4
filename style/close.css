@@ -1,0 +1,17 @@
+.close {
+    width: 50px;
+	float: right;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    border-radius: 50px;
+}
+
+.close:hover {
+    background-color: bisque;
+}
+
+.close > img {
+    height: auto;
+    width: 35px;
+}
