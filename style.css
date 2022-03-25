@@ -174,7 +174,7 @@ li > div > div:first-child > div {
 
 .modal-window {
     min-height: 300px;
-    max-height: 800px;
+    max-height: calc(100vh - 72px);
     width: 1000px;
     background-color: #FFFFFF;
     margin: auto;
