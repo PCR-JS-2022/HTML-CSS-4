@@ -23,21 +23,17 @@ body {
 
 .window {
     width: 1000px;
-    min-height: 300px;
-    max-height: calc(100vh - 72px);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    overflow-y: auto;
 }
 
 .close-window-button {
     margin: 0px 10px;
     font-size: 25px;
     font-weight: bold;
-    position: absolute;
-    right: 0;
+    float: right;
 }
 
 button{
@@ -62,13 +58,18 @@ button{
 
 .like-person-block {
     text-align: center;
-    padding: 30px;
+    padding: 15px 34px;
 }
 
 .likes-people {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    min-height: 300px;
+    width: 991px;
+    margin: 0px;
 }
 
 button > img {
