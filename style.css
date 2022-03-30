@@ -136,7 +136,6 @@ article > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child
 
 /* The Modal (background) */
 .modal {
-    display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 3; /* Sit on top */
     left: 0;
@@ -157,9 +156,9 @@ article > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child
     padding: 30px;
     border: 1px solid #888;
     min-height: 300px;  
-    max-height: 87vh;
+    max-height: calc(100vh - 72px);
+    box-sizing: border-box;
     width: 1000px;
-    margin: 36px 0px;
 }
 
 /* The Close Button */
@@ -201,9 +200,9 @@ article > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child
 }
 
 .person img {
-    width: 162px;
-    height: 162px;
-    border-radius: 81px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
 }
 
 .person .person-name:hover {
