@@ -159,6 +159,9 @@ article > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child
     max-height: calc(100vh - 72px);
     box-sizing: border-box;
     width: 1000px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* The Close Button */
@@ -168,6 +171,7 @@ article > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child
     font-size: 28px;
     font-weight: bold;
     margin: 5px;
+    align-self: flex-end;
 }
 
 .close:hover,
@@ -177,12 +181,6 @@ article > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child
     cursor: pointer;
 }
 
-.wrapper {
-    overflow: auto; /* Enable scroll if needed */
-    max-height: 85%;
-    margin: 5px;
-}
-
 .people-liked {
     margin: 36px 0px;
     display: flex;
@@ -190,6 +188,7 @@ article > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child
     gap: 20px 20px;
     justify-content: flex-start;
     flex-wrap: wrap;
+    overflow: auto;
 }
 
 .person {
